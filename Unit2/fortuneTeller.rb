@@ -11,17 +11,17 @@ if color == "red" && number == 1
   puts "Fortune: You will live in a big house"
 elsif color == "red" && number == 2
   puts "Fortune: You will become rich"
-elsif color == "red" and number == 3
+elsif color == "red" && number == 3
   puts "Fortune: You will go to jail"
-elsif color == "red" and number == 4
+elsif color == "red" && number == 4
   puts "Fortune: You will be divorced 4 times"
-elsif color == "blue" and number == 1
+elsif color == "blue" && number == 1
   puts "Fortune: You will win a trip to Hawaii"
-elsif color == "blue" and number == 2
+elsif color == "blue" && number == 2
   puts "Fortune: You will be eaten by a bear"
-elsif color == "blue" and number == 3
+elsif color == "blue" && number == 3
   puts "Fortune: You will earn a promotion"
-elsif color == "blue" and number == 4
+elsif color == "blue" && number == 4
   puts "Fortune: You will develop a rare disease"
 else
   puts "Invalid input"
