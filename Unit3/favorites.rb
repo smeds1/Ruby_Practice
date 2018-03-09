@@ -7,5 +7,6 @@ word = gets.strip
 puts "Enter your favorite number: "
 num = gets.strip.to_i
 
-(0..num).each do |i|
+(1..num).each do |i|
   puts word
+end
