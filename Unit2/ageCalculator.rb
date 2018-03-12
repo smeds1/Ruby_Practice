@@ -16,14 +16,14 @@ print "Enter the day you were born: "
 dd = gets.strip.to_i
 
 if mm < month
-  puts "You are "+ (year-yy).to_s + " years old"
+  puts "You are #{year-yy} years old"
 elsif mm > month
-  puts "You are "+ (year-yy-1).to_s + " years old"
+  puts "You are #{year-yy-1} years old"
 elsif dd < day
-  puts "You are "+ (year-yy).to_s + " years old"
+  puts "You are #{year-yy} years old"
 elsif dd > day
-  puts "You are "+ (year-yy-1).to_s + " years old"
+  puts "You are #{year-yy-1} years old"
 else
-  puts "You are "+ (year-yy).to_s + " years old"
+  puts "You are #{year-yy} years old"
   puts "Happy Birthday!"
 end
