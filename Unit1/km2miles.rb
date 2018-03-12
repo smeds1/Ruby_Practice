@@ -4,4 +4,4 @@
 
 puts "Input number of Kilomters: "
 km = gets.strip.to_i
-puts km.to_s + ' kilometers is ' + (km*0.621371).round(3).to_s + ' miles '
+puts "#{km} kilometers is #{(km*0.621371).round(3)} miles"
