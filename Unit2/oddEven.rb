@@ -6,7 +6,7 @@ puts "Enter an integer: "
 num = gets.strip.to_i
 
 if num%2 == 0
-  puts num.to_s + " is even"
+  puts "#{num} is even"
 else
-  puts num.to_s + " is odd"
+  puts "#{num} is odd"
 end
