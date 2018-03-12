@@ -11,5 +11,5 @@ x2 = gets.strip.to_f
 puts "Y2 = "
 y2 = gets.strip.to_f
 slope = (y2-y1)/(x2-x1)
-puts 'The slope is ' + slope.to_s
-puts 'The equation of the line is y = ' + slope.to_s + 'X + ' + (y1 - x1*slope).to_s
+puts "The slope is #{slope}"
+puts "The equation of the line is y = #{slope}X + #{(y1 - x1*slope)}"
