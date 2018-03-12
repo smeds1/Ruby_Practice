@@ -13,9 +13,9 @@ y2 = gets.strip.to_f
 
 if x2 == x1
   puts "The slope is undefined"
-  puts "The equation of the line is X=" + x1.to_s
+  puts "The equation of the line is X = #{x1}"
 else
   slope = (y2-y1)/(x2-x1)
-  puts 'The slope is ' + slope.to_s
-  puts 'The equation of the line is y = ' + slope.to_s + 'X + ' + (y1 - x1*slope).to_s
+  puts "The slope is #{slope}"
+  puts "The equation of the line is y = #{slope}X + #{y1 - x1*slope}"
 end
