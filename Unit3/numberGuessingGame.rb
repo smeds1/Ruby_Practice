@@ -18,4 +18,4 @@ until guess == num
 end
 
 puts "You win!"
-puts "It took you " + numGuesses.to_s + " guesses"
+puts "It took you #{numGuesses} guesses"
