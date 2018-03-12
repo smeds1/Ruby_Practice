@@ -14,4 +14,4 @@ total += ((binary/10**5)%10)*2**5
 total += ((binary/10**6)%10)*2**6
 total += ((binary/10**7)%10)*2**7
 
-puts total.to_s
+puts total
