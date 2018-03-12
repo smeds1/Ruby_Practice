@@ -16,4 +16,4 @@ while i<=t2
   i += diff
 end
 
-puts "The sum of the numbers from " + t1.to_s + " to " + t2.to_s + " is " + total.to_s
+puts "The sum of the numbers from #{t1} to #{t2} is #{total}"
