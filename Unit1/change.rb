@@ -5,7 +5,7 @@
 puts "Input a number of cents: "
 cents = gets.strip.to_i
 
-puts "Quarters: " + (cents/25).to_s
-puts "Dimes: " + ((cents%25)/10).to_s
-puts "Nickels: " + (((cents%25)%10)/5).to_s
-puts "Pennies: " + (((cents%25)%10)%5).to_s
+puts "Quarters: #{cents/25}"
+puts "Dimes: #{(cents%25)/10}"
+puts "Nickels: #{((cents%25)%10)/5}"
+puts "Pennies: #{(((cents%25)%10)%5)}"
