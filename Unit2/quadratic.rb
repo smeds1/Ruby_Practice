@@ -12,8 +12,8 @@ c = gets.strip.to_f
 
 discrim = b**2 - 4*a*c
 if discrim == 0
-  puts "x = " + (-1*b/(2*a)).to_s
+  puts "x = #{-1*b/(2*a)}"
 else
-  puts "x = " + ((-1*b + discrim**0.5)/(2*a)).to_s + " or"
-  puts "x = " + ((-1*b - discrim**0.5)/(2*a)).to_s + " or"
+  puts "x = #{(-1*b + discrim**0.5)/(2*a)} or"
+  puts "x = #{(-1*b - discrim**0.5)/(2*a)} or"
 end
