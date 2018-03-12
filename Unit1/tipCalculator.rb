@@ -6,4 +6,4 @@ puts "Price of Meal (in dollars): "
 price = gets.strip.to_f
 puts "% to tip: "
 tip = gets.strip.to_f
-puts "Your should tip " + (price*tip/100).round(2).to_s + " dollars"
+puts "Your should tip #{(price*tip/100).round(2)} dollars"
