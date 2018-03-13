@@ -3,17 +3,17 @@
 #printSquares.rb
 
 def printSquares(rows,cols)
-  (1..rows).each do |i|
-    (1..cols).each do |j|
+  (1..rows).each do
+    (1..cols).each do
       print "+--"
     end
     puts "+"
-    (1..cols).each do |j|
+    (1..cols).each do
       print "|  "
     end
     puts "|"
   end
-  (1..cols).each do |j|
+  (1..cols).each do
     print "+--"
   end
   puts "+"
