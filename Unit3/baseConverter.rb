@@ -3,9 +3,9 @@
 #baseConverter.rb
 
 puts "Enter a base-10 number: "
-num = gets.to_i
+num = gets.strip.to_i
 puts "What base would you like to convert to: "
-base = gets.to_i
+base = gets.strip.to_i
 
 largestPower = Math.log(num,base).to_i
 
