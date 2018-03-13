@@ -3,7 +3,7 @@
 #changeComputerLoop.rb
 
 puts "Enter the number of cents you need to give in change: "
-cents = gets.to_i
+cents = gets.strip.to_i
 
 quarters = 0
 while cents > 25
