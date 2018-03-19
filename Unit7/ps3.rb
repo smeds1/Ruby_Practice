@@ -2,10 +2,6 @@
 #3/16/18
 #ps3.rb - originally used for my comp sci II class
 
-def tester()
-  puts "a test"
-end
-
 #The following is a class to represent a phonebook using a dictionary
 #The dictionary key is a person's name and the value is their number.
 #Ex: contacts['Sam Smedinghoff'] = 123-4567
@@ -43,9 +39,7 @@ class Phonebook
     #returns the number associated with name
     def lookup_number(name)
         @contacts.each do |contact|
-          if contact[:name] == name
-            return contact[:number]
-          end
+          (return contact[:number]) if contact[:name] == name
         end
         return nil
     end
