@@ -17,13 +17,7 @@ end
 #The function should return a new set that contains only the elements
 #of S that are multiples of 5
 def fivesSet(s)
-  newSet = [].to_set
-  s.each do |elt|
-    if elt%5==0
-      newSet.add(elt)
-    end
-  end
-  return newSet
+  return (s.find_all {|i| i%5 == 0}).to_set
 end
 
 #Fill in the following function:
@@ -69,14 +63,10 @@ def primes(n)
     j=2
     prime = true
     while j<=i**0.5
-      if i%j==0
-        prime = false
-      end
+      (prime = false) if i%j==0
       j += 1
     end
-    if prime
-      result << i
-    end
+    (result << i) if prime
     i +=1
   end
   return result
