@@ -8,11 +8,7 @@
 #(that is if n=m*i for some integer i)
 #the function returns False otherwise
 def is_multiple(n,m)
-  if n==0 || (m!=0 && n%m==0)
-    return true
-  else
-    return false
-  end
+  (n==0 || (m!=0 && n%m==0)) ? (return true) : (return false)
 end
 
 #fill in the following function
@@ -27,11 +23,7 @@ def is_even(k)
     i -= 2
   end
 
-  if i == 0
-   return true
- else
-   return false
- end
+  i == 0 ? (return true) : (return false)
 end
 
 #fill in the following function
@@ -57,15 +49,7 @@ end
 #the function returns the sum of the squares of all positive
 #integers that are LESS THAN n
 def sum_of_squares(n)
-  if n<= 1
-    return 0
-  else
-    total = 0
-    (1..n-1).each do |i|
-      total += i**2
-    end
-    return total
-  end
+  return (1..n-1).inject(0) {|sum, i| sum + i**2}
 end
 
 
@@ -74,12 +58,7 @@ end
 #the function returns True if all of the values in data are different
 #the function returns False if there are one or more repeats
 def unique(data)
-  data.each do |item|
-    if data.count(item) > 1
-      return false
-    end
-  end
-  return true
+  return data.all? {|item| data.count(item) == 1}
 end
 
 
